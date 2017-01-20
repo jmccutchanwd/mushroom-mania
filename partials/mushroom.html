@@ -1,2 +1,37 @@
-<h2>Mushrooms Search</h2>
-{{mushrooms}}
+<hr>
+<h3>Search Text:</h3>
+<input type="text" ><br><br>
+
+<label for="poisonous">Poisonous:
+  <input type="radio" ng-model="x" value="false">
+</label><br>
+<label for="non-poisonous">Non Poisonous:
+  <input type="radio" ng-model="x" value="true">
+</label><br>
+<label for="non-poisonous">Both:
+  <input type="radio" ng-model="x" value="">
+</label>
+<hr>
+<div class="col-md-6 card" ng-repeat="item in mushrooms | filter: searchlist | filter: x">
+  <h4 ng-repeat="(key, value) in item">{{key | uppercase}}</h4>
+  <p ng-repeat="(key, value) in item">{{value.description}}</p>
+  <p ng-repeat="(key, value) in item">Edible: {{value.edible}}</p>
+</div>
+
+<!--
+ng-click="let val = 'true'"
+ng-value
+ng-if
+
+
+<span style="margin-bottom: 10px; display: inline-block;">Search:
+
+    <input ng-model="searchText[selectedSearch]"
+                  ng-init="searchText = {};selectedSearch='CustomerName'" />
+<
+/span>
+
+<input type="radio" ng-model="selectedSearch" value="CustomerName" > Customer Name
+<input type="radio" ng-model="selectedSearch" value="CreatedDate" > Created Date
+<input type="radio" ng-model="selectedSearch" value="Category" > Category
+-->

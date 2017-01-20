@@ -1,5 +1,5 @@
+/* John McCutchan ========================================= */
 console.log('Config');
-
 app.config(function($routeProvider, $locationProvider){
   $locationProvider.hashPrefix('');
 
@@ -19,4 +19,4 @@ app.config(function($routeProvider, $locationProvider){
      .otherwise({
         redirectTo: '/',
      })
-  })
+})
