@@ -1,0 +1,22 @@
+{
+  "name": "mushroom-mania",
+  "homepage": "https://github.com/jmccutchanwd/mushroom-mania",
+  "authors": [
+    "John McCutchan <john.mccutchan.wd@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-tour": "ng-route#*",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.1"
+  }
+}
