@@ -1,15 +1,15 @@
 <hr>
 <h3>Search Text:</h3>
-<input type="text" ><br><br>
+<input type="text" ng-model="searchlist"><br><br>
 
 <label for="poisonous">Poisonous:
-  <input type="radio" ng-model="x" value="false">
+  <input type="radio" ng-model="x" ng-value="false">
 </label><br>
 <label for="non-poisonous">Non Poisonous:
-  <input type="radio" ng-model="x" value="true">
+  <input type="radio" ng-model="x" ng-value="true">
 </label><br>
 <label for="non-poisonous">Both:
-  <input type="radio" ng-model="x" value="">
+  <input type="radio" ng-model="x" ng-value="">
 </label>
 <hr>
 <div class="col-md-6 card" ng-repeat="item in mushrooms | filter: searchlist | filter: x">
